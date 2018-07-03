@@ -4,7 +4,7 @@ var css = document.querySelector ("h3");
 var body = document.querySelector("body");
 
 // 1. Set color inputs match the background generated on the first page load. 
-// If user will change hex color values in styles (bacground property) it will apply for inputs automatically after refreshing of the page
+// If user will change hex color values in styles (background property) it will apply for inputs automatically after refreshing of the page
 setInitColors();
 
 // Add event listeneres to change the background color in style 
