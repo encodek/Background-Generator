@@ -8,29 +8,24 @@ var body = document.querySelector("body");
 setInitColors();
 
 // Add event listeneres to change the background color in style 
-
 color1.addEventListener("input", setGradient);
-
 color2.addEventListener("input", setGradient);
 
 function setGradient(){
 	 body.style.backgroundImage="linear-gradient(to right, " + color1.value + ", " + color2.value + ")" ;
 	  css.textContent = body.style.backgroundImage + ";" ;
-
 }
 
-// 1. Set color inputs match the background generated on the first page load using colors values from styles.
+
 function setInitColors() {
 // Set value for color1 input
-color1.setAttribute("value", getColorValue(parseCssGradientStypePropertyValue(), "color1")); 
-
+color1.setAttribute("value", getColorValue(parseCssGradientStypePropertyValue(), "color1"));
 // Set value for color2 input 
 color2.setAttribute("value", getColorValue(parseCssGradientStypePropertyValue(), "color2")); 
 
 //2. Display the initial CSS linear gradient property on page load.
 setGradient();
 }
-
 
 function componentToHex(c) {
     var hex = c.toString(16);
@@ -89,8 +84,6 @@ return rgbToHex (r,g,b);
 }
 
 // BONUS: Add a random button which generates two random numbers for the colour inputs.
-
-
 // Create Random button 
 var btnRandom = document.createElement("button");
 var btnRandomText = document.createTextNode("Random");
