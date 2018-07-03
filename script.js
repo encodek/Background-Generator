@@ -63,7 +63,7 @@ var textB = arrayTextB[0].split(" ")[1];
 
 else if (  requiredColor==="color2")
 {
-// split parts of parsed Property array, related for color 1 value  into r,g,b strings
+// split parts of parsed Property array, related for color 2 value  into r,g,b strings
 var arrayTextR = splittedPropertyText[4].split("(");
 var arrayTextG = splittedPropertyText[5].split(" ");
 var arrayTextB = splittedPropertyText[6].split(")");
